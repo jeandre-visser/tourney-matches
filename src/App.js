@@ -3,12 +3,12 @@ import PlayerList from "./components/PlayerList";
 import MatchList from "./components/MatchList";
 import matchData from './data/MatchData';
 import playerData from './data/PlayerData';
-import { preparePlayerData, addWinsToPlayer } from './helpers/playerHelpers';
+import { preparePlayerData, addWinsToPlayers } from './helpers/playerHelpers';
 
-function App(props) {
+function App() {
 
   const playerDataArray = preparePlayerData(playerData);
-  const parsedPlayerData = addWinsToPlayer(playerDataArray, matchData);  
+  const parsedPlayerData = addWinsToPlayers(playerDataArray, matchData);  
 
 
   return (
@@ -17,7 +17,7 @@ function App(props) {
         Tourney Matches{" "}
         <span>Where Coding and Tournaments found their Match!</span>
       </h1>
-      <PlayerList matchData={matchData} playerData={parsedPlayerData} />
+      <PlayerList playerData={parsedPlayerData} />
       <MatchList matchData={matchData} />
     </div>
   );
