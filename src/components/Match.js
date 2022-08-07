@@ -1,4 +1,5 @@
 function Match() {
+  return (
   <article className="Match">
     <h1>
       Joe <span>vs</span> Bob
@@ -8,6 +9,7 @@ function Match() {
     {/* To be shown when there is no winner */}
     <h2>No winners yet!</h2>
   </article>
+  );
 }
 
 export default Match;
