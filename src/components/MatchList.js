@@ -1,4 +1,4 @@
-import Match from "./Matchs"
+import Match from "./Match"
 
 function MatchList() {
   <section className="PlayerList MatchList">
