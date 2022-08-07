@@ -4,7 +4,7 @@ export const preparePlayerData = (playerData) => {
 
 
 
-export const addWinsToPlayer = (playerDataArray, matchData) => {
+export const addWinsToPlayers = (playerDataArray, matchData) => {
   return playerDataArray.map(player => {
     //calculate number of wins for each player in the match data
     const currentWins = matchData.reduce((accumulator, match) => {
