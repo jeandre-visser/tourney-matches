@@ -1,4 +1,5 @@
-import Match from "./Match"
+import Match from "./Match";
+import matchData from '../data/matchData';
 
 function MatchList() {
   return (
